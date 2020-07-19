@@ -111,7 +111,7 @@ public class Node {
 	}
 
 	/**
-	 * Uses the Halversine method to calculate the direct distance between to
+	 * Uses the <i>Halversine</i> method to calculate the direct distance between to
 	 * locations on this planet based on latitude and longitude between this node an
 	 * another
 	 * 
