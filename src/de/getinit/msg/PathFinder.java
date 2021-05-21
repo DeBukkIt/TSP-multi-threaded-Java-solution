@@ -116,8 +116,7 @@ public class PathFinder {
 
 			// keep track of progress
 			if ((orderCounter++ + 1) % (1 * 1000 * 1000) == 0) {
-				// TODO Fix double/long overflow error
-				double progress = (double) orderCounter / (double) orderCountPerThread * (double) 100;
+				double progress = ((double) orderCounter * (double) 100) / (double) orderCountPerThread;
 				System.out.println("[" + ID + "] Thread-local progress: "
 						+ new DecimalFormat("0.0000000000000000").format(progress) + "% done.");
 			}
